@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>inhertance</h1>
+        <script>
+            class car{
+                constructor(brand){
+                    this.brand = brand;
+                }
+                 present() {
+                    return "I have "+this.brand
+                }
+            }
+            class model extends car{
+                constructor(brand , m){
+                    super(brand)
+                    this.m = m;
+                }
+            }
+            m1 = new model("Mercides","Benz")
+         document.write(  m1.present())
+            
+        </script>
+    </body>
+</html>
